@@ -1,0 +1,1048 @@
+.ivf-container{
+    margin-top: -20px;
+  height: 785px;
+}
+a{
+text-decoration: none;
+color: #1E231E;
+}
+.span-home{
+   
+    margin-left: 1.99rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500;  
+}
+
+.span-ivf{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #1E231E;
+}
+
+@media (min-width: 521px) {
+
+ 
+.calculator-main-container{
+   width: 900px;
+   margin-left: 15%;
+}
+.mobile-arrow-text-left{
+  display: none;
+}
+.age-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between rows */
+  }
+  .age-group {
+
+    font-size: 28px;
+    color: #1E231E;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-left: 15%;
+    margin-bottom: 2%;
+  }
+  .age-group-row {
+    
+    margin-left: 20%;
+    display: flex;
+    justify-content: flex-start; /* Aligns all items to the start */
+    gap: 2rem; /* Adds space between each radio button group */
+  }
+  
+  .radio-label {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    width: 200px; /* Keeps labels consistent in width */
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px; /* Space between radio button and label text */
+  }
+
+  .ivf-numbers-heading {
+
+    font-size: 28px;
+    color: #1E231E;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+  }
+  
+
+
+  .slider-container {
+    width: 80%;
+    margin: 3rem 15%;
+    position: relative;
+    height: 100px;
+    align-items: center;
+  }
+  
+  .slider {
+    width: 100%;
+    appearance: none;
+    height: 8px;
+    background: #EDEEF1;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease; /* Smooth transition */
+   z-index: 999;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #F48265;
+    border-radius: 50%;
+    cursor: pointer;
+   z-index: 999;
+  }
+  .hidden-bubble {
+    display: none;
+  }
+  /* Bubble container and bubble styling */
+  .bubble-container {
+    position: absolute;
+    width: 100.2%;
+    top: -30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bubble {
+    
+    position: relative;
+    width: 7.77px;
+    height: 7.77px;
+    background-color: #535353;
+   
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.99%;
+    margin-left: 2.2%;
+   
+   
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  /* Heart popup styling */
+  .heart-popup {
+    position: absolute;
+    left: -10px;
+    top: -45px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #F48265;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+ 
+  .heart-number{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    margin-left: -28px;
+  }
+  
+  .heart-popup .heart {
+   
+    width: 36px;
+    height: 37px;
+    color: #F48265;
+  }
+  
+   /* Custom Radio Button Styling */
+   input[type="radio"] {
+    display: none;
+}
+
+.custom-radio-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #F48265;
+    background-color: #fff;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+input[type="radio"]:checked + .custom-radio-button::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #F48265;
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked + .custom-radio-button {
+    background-color: transparent;
+    border-color: #F48265;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.custom-radio-button:hover {
+    border-color: #F48265;
+}
+
+.custom-radio {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #1E231E;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"] {
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+.radio-label-text{
+
+  font-weight: 400;
+  color: #1E231E;
+}
+.radio-label input[type="radio"]:checked + .custom-radio-button + .radio-label-text {
+  font-weight: 700;
+}
+
+
+/*yes or */
+.question3 {
+
+  font-size: 28px;
+  color: #1E231E;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-top: -7%;
+}
+
+.question-3-input{
+  display: flex;
+  flex-direction: row;
+gap: 10%;
+}
+.icsi 
+{
+  margin-left: 19%;
+  display: flex;
+  flex-direction: row;
+ 
+  white-space: nowrap;
+}
+
+.pgt{
+  display: flex;
+  flex-direction: row;
+ 
+  white-space: nowrap;
+
+}
+.question-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1E231E;
+  margin-bottom: 1rem;
+}
+.radio-group {
+  
+  display: flex;
+  margin-left: 10%;
+  margin-top: -4.9%;
+  gap: 2rem;
+  align-items: center;
+}
+/*to change bold--> when radio button selected for yes or no */
+
+.custom-radio input[type="radio"]:checked + .custom-radio-button + .radio-label-text {
+  font-weight: 700;
+}
+
+/*medical condition question-4 */
+.question4 {
+
+  font-size: 28px;
+  color: #1E231E;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-top: 2.5%;
+}
+
+/*medical condition question-check boxes */
+
+.checkbox-group {
+  display: flex;
+  gap: 3rem; /* Adjust spacing between checkboxes */
+  margin-left: -4.7rem;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #1E231E;
+  white-space: nowrap;
+
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Hide default checkbox */
+}
+
+.custom-checkbox-box {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #F48265;
+  border-radius: 4px;
+
+  margin-right: 15px;
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.custom-checkbox-box .checkbox-tick {
+  display: none;
+  margin-top: 5px;
+  color: white;
+  font-size: 16px;
+ 
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box {
+  background-color: #F48265;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box .checkbox-tick {
+  display: block;
+}
+.custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box + span {
+  font-weight: 700;
+
+}
+
+/*button calculate */
+.calculate-button {
+  display: flex;
+align-items: center;
+justify-content: center;
+margin-left:53%;
+margin-top: 7%;
+width: 147px;
+height: 47px;
+border: none;
+background-color: #d75555;
+border-radius: 6px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+font-size: 16px;
+font-weight: 500;
+font-family: 'Poppins', sans-serif;
+color: white;
+
+}
+
+
+}
+
+
+/*mobile devices */
+@media (max-width: 520px) {
+
+  
+
+    .span-home{
+    display: none;
+    }
+    
+    .span-ivf{
+       
+        display: none;
+    }
+
+    .ivf-container{
+     width:100%;
+     overflow-x: hidden;
+     height: 799px;
+  }
+
+
+
+ 
+  .calculator-main-container{
+    width:100%;
+ margin-top: 15%;
+
+ font-weight: 600;
+ margin-left: -8%;
+
+ }
+ 
+ /* arrrow left */
+
+ 
+
+.mobile-arrow-text-left {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  align-items: center; /* Centers the content vertically */
+  gap: 15px; /* Adjust spacing between arrow and text */
+  margin-left:7.7%;
+  margin-top: 5%;
+  
+}
+
+.arrow-left-mobile {
+  font-size: 22px; /* Adjust the size of the arrow icon */
+}
+
+
+ .age-group-container {
+     display: flex;
+     flex-direction: column;
+     margin-top: -8%;
+     margin-left:16%;
+
+
+ }
+   .age-group {
+ 
+     font-size: 16px;
+     color: #1E231E;
+     font-weight: 600;
+     font-family: 'Poppins', sans-serif;
+   
+   
+     margin-bottom: 2%;
+   }
+   .age-group-row {
+     
+     margin-left: 1%;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start; /* Aligns all items to the start */
+     gap: 0.5rem; /* Adds space between each radio button group */
+   }
+   
+   .radio-label {
+     display: flex;
+    
+     font-family: 'Poppins', sans-serif;
+     font-size: 14px;
+     text-align: center;
+     width: 200px; /* Keeps labels consistent in width */
+   }
+   #age-id{
+    margin-top: 0.5rem;
+   }
+   input[type="radio"] {
+     margin-right: 10px; /* Space between radio button and label text */
+   }
+ 
+   .ivf-cycles-number {
+    margin-left: 16%;
+  }
+  
+  .ivf-numbers-heading {
+    font-size: 16px;
+    color: #1E231E;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5%;
+    margin-bottom: 2%;
+  }
+  
+  /* Flexbox to center the slider and bubbles */
+  .slider-container {
+    width: 80%;
+    margin: 2.5rem 2%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px; /* Adjusted for bubbles */
+    gap: 20px; /* Gap between slider and bubbles */
+  }
+  
+  .slider {
+    width: 100%;
+    appearance: none;
+    height: 10px;
+    background: #EDEEF1;
+    margin-top: -1px;
+    border-radius: 6px;
+    outline: none;
+    transition: background 0.3s ease;
+    z-index: 99;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+  
+  .slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #F48265;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  /* Bubble container aligned over slider */
+  .bubble-container {
+    position: absolute;
+    width: 100%;
+   
+    top:1%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none; /* Prevent bubble overlap issues */
+  }
+  
+  .bubble {
+    position: relative;
+    width: 5.66px;
+    height: 5.66px;
+    background-color: #535353;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  
+  .heart-popup {
+    position: absolute;
+    left: 90%;
+    top: -40px;
+    transform: translateX(-30%);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #F48265;
+    -webkit-transform: translateX(-20%);
+  
+}
+  
+  .heart-number {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    text-align: center;
+   margin-left: -55%;
+}
+  
+  .heart-popup .heart {
+    width: 28px;
+    height: 26px;
+    color: #F48265;
+  }
+  
+  
+   
+    /* Custom Radio Button Styling */
+    input[type="radio"] {
+     display: none;
+ }
+ 
+ .custom-radio-button {
+     display: inline-block;
+     width: 20px;
+     height: 20px;
+     border-radius: 50%;
+     border: 2px solid #F48265;
+     background-color: #fff;
+     position: relative;
+     margin-right: 10px;
+     vertical-align: middle;
+     cursor: pointer;
+     transition: background-color 0.2s, border-color 0.2s;
+ }
+ 
+ input[type="radio"]:checked + .custom-radio-button::after {
+     content: "";
+     position: absolute;
+     top: 4px;
+     left: 4px;
+     width: 12px;
+     height: 12px;
+     background-color: #F48265;
+     border-radius: 50%;
+ }
+ 
+ input[type="radio"]:checked + .custom-radio-button {
+     background-color: transparent;
+     border-color: #F48265;
+     transition: background-color 0.2s, border-color 0.2s;
+ }
+ 
+ .custom-radio-button:hover {
+     border-color: #F48265;
+ }
+ 
+ .custom-radio {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 400;
+     font-size: 20px;
+     color: #1E231E;
+     display: flex;
+     align-items: center;
+     cursor: pointer;
+ }
+ 
+ .custom-radio input[type="radio"] {
+     margin: 0;
+     position: absolute;
+     opacity: 0;
+ }
+ .radio-label-text{
+ font-size: 14px;
+   font-weight: 400;
+   color: #1E231E;
+ }
+ .radio-label input[type="radio"]:checked + .custom-radio-button + .radio-label-text {
+   font-weight: 700;
+ }
+ 
+ 
+ /*yes or */
+ .question3 {
+ 
+   font-size: 16px;
+   color: #1E231E;
+   font-weight: 600;
+   font-family: 'Poppins', sans-serif;
+   
+   margin-left: 16%;
+   margin-bottom: 2%;
+   margin-top: -25%;
+   
+ }
+ 
+ .question-3-input{
+   display: flex;
+   flex-direction: column;
+ gap: 10%;
+ }
+ .icsi 
+ {
+  margin-left: 16%;
+   display: flex;
+   flex-direction: row;
+  
+   white-space: nowrap;
+ }
+ 
+ .pgt{
+   display: flex;
+   flex-direction: row;
+   margin-left: 16%;
+   margin-top: 1%;
+   white-space: nowrap;
+   
+ 
+ }
+ .question-label {
+
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   color: #1E231E;
+   margin-bottom: 1rem;
+ }
+ .radio-group {
+   
+   display: flex;
+   margin-left: 7%;
+   margin-top: -3.9%;
+   gap: 1rem;
+ 
+ }
+
+ #ra{
+  margin-left: 16.2%;
+ }
+
+ /*to change bold--> when radio button selected for yes or no */
+ 
+ .custom-radio input[type="radio"]:checked + .custom-radio-button + .radio-label-text {
+   font-weight: 700;
+ }
+ 
+ /*medical condition question-4 */
+ .question4 {
+ 
+   font-size: 16px;
+   color: #1E231E;
+   font-weight: 600;
+   font-family: 'Poppins', sans-serif;
+  
+   margin-left: 16%;
+   margin-bottom: 2%;
+   margin-top: 2.5%;
+ }
+ 
+ /*medical condition question-check boxes */
+ 
+ .checkbox-group {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem; /* Adjust spacing between checkboxes */
+   margin-left: 1.7%;
+  
+ }
+ 
+ .custom-checkbox {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   font-family: 'Poppins', sans-serif;
+   font-size: 14px;
+   font-weight: 400;
+   color: #1E231E;
+   white-space: nowrap;
+ 
+ }
+ 
+ .custom-checkbox input[type="checkbox"] {
+   display: none; /* Hide default checkbox */
+ }
+ 
+ .custom-checkbox-box {
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width: 24px;
+   height: 24px;
+   border: 3px solid #F48265;
+   border-radius: 3px;
+   margin-right: 15px;
+   position: relative;
+   transition: background-color 0.2s, border-color 0.2s;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -ms-border-radius: 3px;
+   -o-border-radius: 3px;
+}
+ 
+ .custom-checkbox-box .checkbox-tick {
+   display: none;
+   margin-top: 5px;
+   color: white;
+   font-size: 18px;
+  
+ }
+ 
+ .custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box {
+   background-color: #F48265;
+ }
+ 
+ .custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box .checkbox-tick {
+   display: block;
+ }
+ .custom-checkbox input[type="checkbox"]:checked + .custom-checkbox-box + span {
+   font-weight: 700;
+ 
+ }
+ 
+ /*button calculate */
+ .calculate-button {
+   display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-left: 38%;
+
+ margin-top: 7%;
+ margin-bottom: 8%;
+ width: 147px;
+ height: 47px;
+ border: none;
+ background-color: #d75555;
+ border-radius: 6px;
+ cursor: pointer;
+ transition: background-color 0.3s ease;
+ font-size: 16px;
+ font-weight: 500;
+ font-family: 'Poppins', sans-serif;
+ color: white;
+ 
+ }
+
+
+
+
+
+
+
+    
+  }
+  @media (max-width: 425px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 10%;
+    }
+   
+  }
+
+  @media (max-width: 370px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 20%;
+    }
+   
+    .radio-group {
+   
+      display: flex;
+      margin-left: 7%;
+      margin-top: -4.9%;
+      gap: 1rem;
+    
+    }
+  }
+
+  
+  @media (max-width: 350px) {
+
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 20%;
+    }
+    .calculate-button {
+      display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+   
+    margin-top: 7%;
+    margin-bottom: 8%;
+    width: 147px;
+    height: 47px;
+    border: none;
+    background-color: #d75555;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    
+    }
+  }
+
+  @media (max-width: 330px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 40%;
+    }
+   
+   
+  }
+
+  @media (max-width: 273px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 40%;
+    }
+   
+   
+  }
+
+
+
+  
+  @media (max-width: 253px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 40%;
+    }
+   
+   
+  }
+ 
+  @media (max-width: 218px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 60%;
+    }
+   
+   
+  }
+
+  @media (max-width: 191px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 60%;
+    }
+   
+   
+  }
+
+  @media (max-width: 184px) {
+    .mobile-arrow-text-left {
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      display: flex;
+      align-items: center; /* Centers the content vertically */
+      gap: 15px; /* Adjust spacing between arrow and text */
+     
+      margin-top: 80%;
+    }
+   
+   
+  }
+
+
+  @media (max-width: 470px) {
+    .question3 {
+ 
+      font-size: 16px;
+      color: #1E231E;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      
+      margin-left: 16%;
+      margin-bottom: 2%;
+      margin-top: -30%;
+      
+    }
+   
+   
+  }
+
+  @media (max-width: 308px) {
+    .question3 {
+ 
+      font-size: 16px;
+      color: #1E231E;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      
+      margin-left: 16%;
+      margin-bottom: 2%;
+      margin-top: -40%;
+      
+    }
+   
+   
+  }
+
+  @media (max-width: 250px) {
+    .question3 {
+ 
+      font-size: 16px;
+      color: #1E231E;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      
+      margin-left: 16%;
+      margin-bottom: 2%;
+      margin-top: -57%;
+      
+    }
+   
+   
+  }
+
+
+  

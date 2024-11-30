@@ -1,0 +1,11 @@
+.aa{
+    width: 100%;
+ position: fixed;
+    z-index: 9999;
+    overflow: visible;
+}
+
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,13 @@
+.main-content {
+  z-index: -1;
+    height: 100px;
+    padding-top: 10%; /* Same height as the navbar */
+  }
+  @media (max-width: 520px) {
+
+    .main-content {
+    height: 100px;
+    padding-top: 30%; /* Same height as the navbar */
+  }
+  }
+ 

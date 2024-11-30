@@ -1,0 +1,546 @@
+/* Ensure html and body take full height and disable scrolling */
+html, body {
+    height: 100vh;
+    margin: 0;
+   /* Disable vertical and horizontal scrolling */
+}
+@media (min-width: 521px) {
+.result-page-container {
+    overflow: hidden; /* Prevent any overflow inside the container */
+   height : 83.05vh; /* Ensures the container takes the full height of the viewport */
+    width: 100%; /* Set to full width */
+    margin-left: 0; /* Adjust to avoid any offset */
+    padding-top: 118px;
+    background-color: #303030; /* Background color */
+    background-attachment: scroll;
+    z-index: -1;
+    position: relative;
+    border: none;
+}
+.arrow-left-mobiles,
+.mobile-arrow-text-lefts{
+display: none;
+
+}
+
+.span-result{
+   
+    margin-left: 1.99rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500; 
+    color: #ffffff; 
+}
+.home-result-text{
+    color:white;
+}
+
+.span-ivf-result{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.sub-container{
+    display: flex;
+    flex-direction: row;
+}
+.photo {
+    position: relative;
+ margin-left: -27%;
+    height: 100%; /* Ensure photo container takes full height */
+    margin-top: -3.6%;
+}
+
+.shadow {
+    position: absolute;
+    top: -19%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Shadow stays below the parent image */
+}
+
+.parents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+   
+}
+
+
+.line-with-circle {
+    display: flex;
+    align-items: center;
+    margin-top: -27%;
+  }
+  
+  .line {
+    
+    width: 120px; /* Line width */
+    height: 2px; /* Line height */
+    background-color: #F48265; /* Line color */
+  }
+  
+  .circle {
+    width: 32px; /* Circle width */
+    height: 32px; /* Circle height */
+    border-radius: 50%; /* To make it round */
+    background-color: #F48265; /* Circle color */
+    margin-left: 0; /* Space between the line and circle */
+  }
+  
+.result-text{
+    margin-left: 1%;
+    margin-top: 2.4%;
+    white-space: nowrap;
+    font-size: 42px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.circle-container {
+    margin-top: 10%;
+    width: 242px;
+    height: 242px;
+   margin-left: -34%;
+   margin-right: 35%;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circles {
+    transform: rotate(-90deg); /* Start the stroke from the top */
+    position: absolute;
+}
+
+circle {
+    fill: none; /* Keep SVG circles transparent inside */
+    stroke-width: 20;
+}
+
+.background {
+    stroke: #5BD489; /* Grey background color */
+    opacity: 30%;
+    z-index: 100;
+}
+
+.foreground {
+    stroke: #5BD489; /* Green stroke */
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s ease;
+    z-index: 100;
+}
+
+.percentage-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.inner-red-circle {
+    width: 148px; /* Adjust size for inner circle */
+    height: 148px;
+    background-color: #032706;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.percentage-number {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+.text-ivf{
+    margin-top: 350px;
+    font-size: 36px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+    margin-left:-5%;
+   
+}
+.blur-overlay,
+.button-container 
+    {
+    display: none;
+}
+
+}
+  
+/* Responsive styling adjustments */
+@media (max-width: 520px) {
+    
+
+    .button-container {
+        position: absolute;
+        bottom: 10px;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-left: 9%;
+      }
+      
+      .retry-button {
+        color: white;
+        padding: 12px 24px;
+        font-size: 16px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        width: 280px;
+        height: 52px;
+        background-color: #d75555;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 16px;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+      
+       .arrow-navbars {
+        margin-left: 5px;
+       
+        width: 20px;
+        height: 22px;
+        color: white;
+        z-index: 100;
+      }
+      
+      .retry-button:hover {
+        background-color: #c34c4c;
+      }
+    
+    .blur-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+    backdrop-filter: blur(8px);
+    z-index: 1;
+  }
+  
+
+
+    .result-page-container {
+        /* Prevent any overflow inside the container */
+        overflow: hidden;
+       height : 100vh; /* Ensures the container takes the full height of the viewport */
+        width: 100%; /* Set to full width */
+        margin-left: 0; /* Adjust to avoid any offset */
+        padding-top: 118px;
+        background-color: #303030; /* Background color */
+        background-attachment: scroll;
+        z-index: -1;
+        position: relative;
+        border: none;
+    }
+
+    .mobile-arrow-text-lefts {
+        
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+        display: flex;
+        align-items: center; /* Centers the content vertically */
+        gap: 15px; /* Adjust spacing between arrow and text */
+        margin-left:5.9%;
+        margin-top: 5%;
+        color: #ffffff;
+        
+      }
+      
+      .arrow-left-mobiles {
+        font-size: 22px; /* Adjust the size of the arrow icon */
+        color: #ffffff;
+      }
+.span-result{
+   
+    display: none;
+}
+.home-result-text{
+    display: none;
+}
+
+.span-ivf-result{
+    display: none;
+}
+
+
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  
+
+}
+.photo {
+    position: relative;
+ margin-left: -27%;
+    height: 100%; /* Ensure photo container takes full height */
+    margin-top: -3.6%;
+}
+
+.shadow {
+    position: absolute;
+    top: -19%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Shadow stays below the parent image */
+}
+
+.parents {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+   
+}
+
+
+.line-with-circle {
+    display: flex;
+    margin-left: -92%;
+  
+  }
+  
+  .line {
+    margin-top: 43px;
+    width: 34px; /* Line width */
+    height: 2px; /* Line height */
+    background-color: #F48265; /* Line color */
+  }
+  
+  .circle {
+    margin-top: 30px;
+    width: 29px; /* Circle width */
+    height: 29px; /* Circle height */
+    border-radius: 50%; /* To make it round */
+    background-color: #F48265; /* Circle color */
+    margin-left: 0; /* Space between the line and circle */
+  }
+  
+.result-text{
+    margin-left: 6%;
+    margin-top: -6.4%;
+    margin-bottom:15%;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.circle-container {
+    width: 242px;
+    height: 242px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circles {
+    transform: rotate(-90deg);
+    position: absolute;
+}
+
+circle {
+    fill: none;
+    stroke-width: 20;
+}
+
+.background {
+    stroke: #5BD489;
+    opacity: 30%;
+}
+
+.foreground {
+    stroke: #5BD489;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 0.3s ease;
+}
+
+.percentage-text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inner-red-circle {
+    width: 148px;
+    height: 148px;
+    background-color: #032706;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.percentage-number {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-ivf {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.shadow {
+    position: absolute;
+    top: -10%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.parents {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+}
+@media (max-width: 500px) {
+    .result-text{
+        margin-left: 15%;
+        margin-top: -8.4%;
+        margin-bottom:15%;
+       e;
+    }
+}
+@media (max-width: 406px) {
+    .result-page-container {
+        width: 104.2%;
+    }
+}
+
+@media (max-width: 380px) {
+    .result-page-container {
+        width: 104.4%;
+    }
+}
+
+@media (max-width: 371px) {
+    .result-page-container {
+        width: 104.5%;
+    }
+}
+
+@media (max-width: 361px) {
+    .result-page-container {
+        width: 104.9%;
+    }
+}
+
+@media (max-width: 334px) {
+    .result-page-container {
+        width: 105.4%;
+    }
+}
+
+@media (max-width: 306px) {
+    .result-page-container {
+        width: 105.9%;
+    }
+
+    .result-text{
+        margin-left: 20%;
+        margin-top: -10.4%;
+        margin-bottom:15%;
+       ;
+    }
+}
+
+
+@media (max-width: 280px) {
+ 
+
+    .result-text{
+        margin-left: 23%;
+        margin-top: -18.4%;
+        margin-bottom:15%;
+       ;
+    }
+}
+
+@media (max-width: 165px) {
+ 
+
+    .result-text{
+        margin-left: 30%;
+        margin-top: -22.4%;
+        margin-bottom:15%;
+       ;
+    }
+}
+
+
+@media (max-width: 146px) {
+ 
+
+    .result-text{
+        margin-left: 37%;
+        margin-top: -30.4%;
+        margin-bottom:15%;
+       ;
+    }
+}
+
+@media (max-width: 135px) {
+ 
+
+    .result-text{
+        margin-left: 42%;
+        margin-top: -24.4%;
+        margin-bottom:15%;
+       ;
+    }
+}

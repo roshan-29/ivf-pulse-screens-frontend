@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.navbar-container {
+  width: 100%;
+ 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  flex-wrap: nowrap;
+  
+background-color: white;
+  /* Removing the gap caused by padding */
+  margin-left: -2rem;
+  margin-right: -2rem;
+  margin-top: -8px;
+z-index: 900;
+  border-bottom: 1px solid #ccc;
+ 
+}
+
+.logo img {
+    padding: 1rem 2rem;
+  max-width: 100%;
+  height: 45px;
+  width: 200px;
+}
+
+@media (max-width: 520px) {
+    .navbar-container {
+      width: 100%;
+ height: 80px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      flex-wrap: nowrap;
+      
+    background-color: white;
+      /* Removing the gap caused by padding */
+      margin-left: -2rem;
+      margin-right: -2rem;
+      margin-top: -8px;
+    z-index: 999;
+      border-bottom: 1px solid #ccc;
+      }
+  /* Logo on left and navbar links below on small screens */
+  .logo {
+    height: 30px;
+    width: 130px;
+   margin-top: -4rem;
+  }
+
+  /* Navbar links should be hidden on small screens */
+  .navbar-links {
+    display: none;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: -1rem;
+    margin-top: 2rem;
+
+   transition: color 0.3s ease;
+    flex-direction: column;
+    background-color: #1e231e;
+    position: absolute;
+    top: 60px;
+ left: 65%;
+    transform: translateX(-50%);
+    width: 40%;
+padding: 2rem;
+    z-index: 9999;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+  
+
+.hamburger-icon {
+    display: block;
+    margin-top: -3px;
+
+    margin-right: 14px;
+    font-size: 32px; /* Increased icon size */
+    cursor: pointer;
+    padding: 10px; /* Adds click area for better UX */
+    transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease; 
+  }
+  
+  .hamburger-icon.close {
+    font-size: 36px; /* Larger size for the cross icon */
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+  }
+
+  /* Navbar links show when menu is open */
+  .navbar-links.show   {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    gap: 1.5rem;
+    white-space: normal;
+    z-index: 9999;
+    padding: 2rem;
+    transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+    -webkit-transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+    -moz-transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+    -ms-transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+    -o-transition: transform 0.3s ease, opacity 0.3s ease, color 0.3s ease;
+}
+
+  .nav-link{
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease  ;
+    -webkit-transition: color 0.3s ease  ;
+    -moz-transition: color 0.3s ease  ;
+    -ms-transition: color 0.3s ease  ;
+    -o-transition: color 0.3s ease  ;
+}
+  .navbar-links.show .nav-link:hover {
+    color: #d75555; /* Optional: Hover effect to add contrast */
+  }
+.button-talk{
+    display: none;
+}
+  /* Hide button when menu is open */
+  .button-talk.hide {
+    display: none;
+  }
+}
+
+@media (min-width: 521px) {
+  /* On larger screens, the hamburger icon is hidden */
+  .hamburger-icon {
+    display: none;
+  }
+
+ 
+  /* Display navbar links normally on larger screens */
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: -1rem;
+    flex-wrap: nowrap;
+    transition: transform 0.3s ease;
+  }
+
+  /* Navbar links styling */
+  .nav-link {
+    text-decoration: none;
+    color: #1e231e;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 1rem; /* Reduced margin for smaller gap */
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #d75555;
+  }
+
+  /* Navbar button */
+  .navbar-button {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+  }
+
+  /* Styling the Talk to Us button */
+  .button-talk {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; /* Gap between text and arrow */
+  width: 148px;
+  height: 48px;
+  border: none;
+  background-color: #d75555;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+
+  }
+
+  /* Hover effect for the button */
+  .button-talk:hover {
+    background-color: #b04444;
+  }
+
+  /* Styling the arrow in the button */
+  .arrow-navbar {
+    margin-left: 10px;
+    margin-bottom: -5px;
+    width: 20px;
+    height: 22px;
+    color: white;
+  }
+}
