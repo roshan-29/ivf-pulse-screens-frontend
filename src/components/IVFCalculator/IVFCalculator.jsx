@@ -28,7 +28,7 @@ const bubbleLabels = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9', '10','10'
   return (
     <div className='ivf-container'>
     <h1 className='span-home'> <a href="#home">Home </a>   <span> <RxSlash />  </span> <span className='span-ivf'>IVF Success Rate Calculator </span></h1>
-    <div className="mobile-arrow-text-left">
+    <div className="mobile-arrow-text-left"  onClick={handleCalculate}>
     <FaArrowLeft className="arrow-left-mobile" />
     <span>IVF Success Rate Calculator</span>
   </div>

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react';
+import {  useNavigate } from 'react-router-dom';
 import './ResultPage.css'
 import shadow from '../../assets/green-ellipse.png'
 import parents from '../../assets/black-white-portrait-woman-expecting-baby.png'
@@ -6,7 +7,10 @@ import { RxSlash } from "react-icons/rx";
 import { FaArrowLeft } from "react-icons/fa6";
 import { GoArrowRight } from 'react-icons/go';
 function ResultPage() {
-
+  const navigate = useNavigate();
+  const handleCalculate = () => {
+    navigate('/ivfCalculator');
+  };
 const percentage=64;
     const radius = 50; // radius of the circle
     const circumference = 2 * Math.PI * radius; // Circumference of the circle
@@ -15,18 +19,18 @@ const percentage=64;
     <div className='result-page-container'>
     
     <h1 className='span-result'> <a href="#home" className='home-result-text'>Home </a>   <span> <RxSlash />  </span> <span >IVF Success Rate Calculator </span>  <span> <RxSlash />  </span>  <span className='span-ivf-result'> Result </span></h1>
-    <div className="mobile-arrow-text-lefts">
-    <FaArrowLeft className="arrow-left-mobiles" />
+    <div   className="mobile-arrow-text-lefts" onClick={handleCalculate}>
+    <FaArrowLeft  className="arrow-left-mobiles" />
     <span>IVF Success Rate Calculator</span>
   </div>
-    <div className='sub-container'>
+    <div  className='sub-container'>
     
     <div className="line-with-circle">
   <div className="line"></div>
   <div className="circle"></div>
  
 </div>
-<div className='result-text'>Your estimated IVF Success Rate is</div>
+<div className='result-text'  >Your estimated IVF Success Rate is</div>
 
 <div className="circle-container">
   {/* SVG Circle - Progress Circle */}

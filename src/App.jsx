@@ -4,6 +4,7 @@ import './App.css';
 import Home from './pages/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 import ResultPage from './components/ResultPage/ResultPage';
+import IVFCalculator from './components/IVFCalculator/IVFCalculator';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} /> {/* Default component */}
        
         <Route path="/result" element={<ResultPage />} />
+        <Route path="/ivfCalculator" element={<Home />} />
       </Routes>
       </div>
     </Router>
