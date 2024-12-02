@@ -196,7 +196,7 @@ circle {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-left: 9%;
+        margin-left: 20%;
       }
       
       .retry-button {
